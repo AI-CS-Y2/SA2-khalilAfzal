@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparative Analysis Summary</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #000;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        caption {
+            font-weight: bold;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Summary of Comparative Analysis</h1>
+    <p>
+        The performance of three machine learning models—Logistic Regression, K-Nearest Neighbors (KNN), 
+        and Decision Tree—was evaluated for the task of heart failure prediction. Each model was assessed 
+        based on its accuracy, Area Under the Curve (AUC) score from the ROC curve, strengths, and limitations. 
+        Logistic Regression emerged as the best-performing algorithm due to its high accuracy and superior 
+        AUC score, which highlights its ability to balance sensitivity and specificity effectively. 
+        Decision Tree followed closely, benefiting from its ability to model non-linear relationships but 
+        facing challenges with overfitting. KNN, while theoretically adept at capturing non-linear patterns, 
+        struggled with high-dimensional data and computational inefficiencies, resulting in the lowest accuracy 
+        and AUC score.
+    </p>
+
+    <table border="1">
+        <tr>
+          <th>Model</th>
+          <th>Accuracy (%)</th>
+          <th>Precision (%)</th>
+          <th>Strengths</th>
+          <th>Limitations</th>
+        </tr>
+        <tr>
+          <td>Logistic Regression</td>
+          <td>78.33</td>
+          <td>92.86</td>
+          <td>Efficient, interpretable, suitable for linear data</td>
+          <td>Struggles with non-linear relationships</td>
+        </tr>
+        <tr>
+          <td>K-Nearest Neighbors</td>
+          <td>61.67</td>
+          <td>100.00</td>
+          <td>Captures non-linear patterns in small datasets</td>
+          <td>Curse of dimensionality, computationally expensive</td>
+        </tr>
+        <tr>
+          <td>Decision Tree</td>
+          <td>73.33</td>
+          <td>80.00</td>
+          <td>Captures non-linear relationships, interpretable</td>
+          <td>Prone to overfitting</td>
+        </tr>
+      </table>
+
+   
+</body>
+</html>
